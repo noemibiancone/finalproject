@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Neuron Cell Structure by noemibiancone</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Neuron Cell Structure</h1>
+        <h2>A 3D model of Neuron Cell Structure in Plasm.js</h2>
+        <a href="https://github.com/noemibiancone/finalproject" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <p>The cell is the structural and functional unit of living organisms. It answers three fundamental requirements: teleonomy, biogenesis and reproduction. The cell performs these functions both in the case in which the body coincide with the cell itself is whether it constitutes a specialized element in an organism is more evolved. Below cellular organization there is no possibility of independent life. Other organisms, such as humans, are multicellular, or have many cells—an estimated 100,000,000,000,000 cells. Each cell is an amazing world unto itself: it can take in nutrients, convert these nutrients into energy, carry out specialized functions, and reproduce as necessary. The cell was discovered by Robert Hooke in 1665. </p>
+
+<p><img src="http://www.mediafire.com/conv/62302966f7599d37635d008699fce0cc1fc57e8bf8c44fa5267e27a4a6b42f8d6g.jpg" alt="cell1"></p>
+
+<p>The neuron, however, also known as nerve cell, is the basic unit of the nervous system and is constituted by a cell body and two types of extensions: the dendrites and the axon. The central nervous system is composed of billions of neurons that have the task to allow communications between the various parts of the organism and allow to receive and respond to external stimuli. In addition to these functions, the neurons also allows to perform higher functions such as reasoning and language.</p>
+
+<p><img src="http://www.mediafire.com/conv/35d6b4b990dabf2a031d847d0b4e5e456a5af8fa872f8bae1f00f761ee8ed2936g.jpg" alt="neuron1"></p>
+
+<h1>Preparation Work</h1>
+
+<p>The preparation work of the project began with an analysis of the neuron cell's structure. Secondly, we chose to use the tool <a href="https://github.com/cvdlab-bio/web3d">Web3D</a> developed by the colleagues of Biomedical Informatics. Using this tool, you can create 2D and 3D models from DICOM images. Regarding this project, has not made use of DICOM images, but a draft of cell drawn free-hand. The freehand drawing has involved a study of the proportions between individual organelles that make up the cell. The project was designed by me and my colleague <a href="http://chiarabicchielli.github.com/finalproject/">Chiara Bicchielli</a>. The design of the implementation part was evenly divided between the two of us. The main difficulty encountered was that due to the fact of being able to create a 3D model from a 2D image, this problem has been solved by a process of abstraction, capable of imagining the right forms and proportions of the model.</p>
+
+<p><img src="http://www.mediafire.com/conv/a63f0cb0a9992bc530bbabc683ad8a3bb3397406a0b8fa1f13007567fef6d7b26g.jpg" alt="web3d"></p>
+
+<h1>Project Structure</h1>
+
+<p>The project is divided into several parts which are divided into the cell and the neuron, respectively. In particular, we can divide the project into two distinct parts: organelles, cell membrane and neuron.</p>
+
+<p>VIEW CODE: <a href="https://github.com/noemibiancone/finalproject/blob/master/finalproject.js">Project</a></p>
+
+<h2>Organelles</h2>
+
+<p>The organelles are contained within the cytoplasm, or a colloidal aqueous, a matrix which occupies about half the volume of the cell itself.
+The organelles are created as follows: nucleus, mitochondria, Golgi apparatus, lysosome, vacuole, centriole, rough endoplasmic reticulum.</p>
+
+<h3>Nucleus</h3>
+
+<p><img src="http://www.mediafire.com/conv/8448d7dd1bd73f3a4f9b7fac95be11f8cb980e477f53b373d2e9fec75a232ba86g.jpg" alt="Nucleus"></p>
+
+<p>The cell nucleus is an organelle present in most cells. Its position varies depending on the function performed by the cell; in some of them find him central, while in other very close to the plasmatic membrane. Its purpose is to contain the nucleic acids, to provide for the DNA replication, transcription and RNA maturation.
+Inside there is another structure called nucleolus. The nucleolus is a region of the cell nucleus responsible for the synthesis of ribosomal RNA (rRNA). The nucleolus is not an organelle but a dense region of genetic material and protein. It is not bordered by a membrane but is held together by a protein structure called the nuclear matrix which constitutes one of the three components of the nuclear skeleton.</p>
+
+<p>The functions used to design this element are:</p>
+
+<ul>
+<li>ROTATIONAL_SURFACE</li>
+<li>T or TRANSLATE</li>
+</ul><p>VIEW CODE: <a href="https://github.com/noemibiancone/finalproject/blob/master/singleElements/RoughEndoplasmaticReticulum.js">Nucleus</a></p>
+
+<h3>Mitochondria</h3>
+
+<p><img src="http://www.mediafire.com/conv/1f2909463f6259d781f665633c074901678a73751bfc5bf243d32c369e5aceaa6g.jpg" alt="mitochondrion"></p>
+
+<p>The mitochondrion is formed by two membranes, a smooth external and one internal finely folded, both very rich in enzymes. Mitochondria are more numerous if  the cellular metabolic activity is greater. Its function is to use oxygen and,through a process that combines glucose with it, produces energy-rich molecules. These molecules are essential for all processes of cellular metabolism.</p>
+
+<p>The functions used to design these elements are:</p>
+
+<ul>
+<li>NUBS</li>
+<li>BEZIER</li>
+<li>COONS_PATCH</li>
+</ul><p>VIEW CODE: <a href="https://github.com/noemibiancone/finalproject/blob/master/singleElements/Mitochondrion1.js">Mitochondrion 1</a> <a href="https://github.com/noemibiancone/finalproject/blob/master/singleElements/Mitochondrion2.js">Mitochondrion 2</a></p>
+
+<h3>Golgi Apparatus</h3>
+
+<p><img src="http://www.mediafire.com/conv/4e41a8df500adcf4a1a24ba9cccc582f2be97697f2713135b788884b5698fff56g.jpg" alt="golgiApparatus"></p>
+
+<p>The Golgi apparatus is usually located near the core and is formed by groups of tanks flattened and delimited by membranes. The function of the Golgi apparatus is to direct the traffic of newly synthesized molecules to the proper destination, after having made the modifications necessary to obtain the final shape of the various molecules. In particular, the sugar chains previously bound to proteins in the endoplasmic reticulum are extensively modified by the addition or removal of certain carbohydrate residues.</p>
+
+<p>The functions used to design this element are:</p>
+
+<ul>
+<li>NUBS</li>
+<li>BEZIER</li>
+</ul><p>VIEW CODE: <a href="https://github.com/noemibiancone/finalproject/blob/master/singleElements/GolgiApparatus.js">Golgi Apparatus</a></p>
+
+<h3>Lysosome and Vacuole</h3>
+
+<p><img src="http://www.mediafire.com/conv/ccb94b9fd2a5f8b4877ab8616731c5f29788544af4d2b1727bef5d0e1ff3b1bc6g.jpg" alt="lysosomeVacuole"></p>
+
+<p>The lysosome is a microscopic cellular component and wrapped by a membrane. Its content is represented by enzymes that the cell uses to "digest" proteins, complex sugars and nucleic acids. In the case wherein the cell is broken, the lysosomes are broken, they release their enzymes and activate the progressive disappearance of the cell.
+The vacuole is presented as a large vesicle delimited by a single semi-permeable membrane of lipoprotein nature. Plays a large number of functions, in particular, the vacuole is concerned to achieve considerable size to the cell,
+to avoid the formation of empty spaces and to push the cytoplasm to the outside of the cell by facilitating the metabolic exchanges. In addition, the vacuole represents a system of excretion of waste and organelle functions as a reserve for water and other substances.</p>
+
+<p>The functions used to design these elements are:</p>
+
+<ul>
+<li>NUBS</li>
+<li>BEZIER</li>
+</ul><p>VIEW CODE: <a href="https://github.com/noemibiancone/finalproject/blob/master/singleElements/lysosomeAndVacuole.js">Lysosome and Vacuole</a></p>
+
+<h3>Centriole</h3>
+
+<p><img src="http://www.mediafire.com/conv/7a68cf19f601647e78ab12369cbd792cb1a40dd45dc4e398f31acbbfba2f018e6g.jpg" alt="centriole"></p>
+
+<p>The centriole is an organelle present in most animal cells. Has a cylindrical shape and, in particular, is made ​​up of nine triplets of hollow cylinders connected together by microtubules. In the course of cell division, the two centrioles present in the cell are positioned at opposite poles of the spindle of segmentation, in which the fibers remain in close contact.</p>
+
+<p>The functions used to design this element are:</p>
+
+<ul>
+<li>NUBS</li>
+<li>BEZIER</li>
+<li>T or TRANSLATE</li>
+</ul><p>VIEW CODE: <a href="https://github.com/noemibiancone/finalproject/blob/master/singleElements/centriole.js">Centriole</a></p>
+
+<h3>Rough Endoplasmatic Reticulum</h3>
+
+<p><img src="http://www.mediafire.com/conv/177ecaf74d0639cb18939c2c70ea88ba750f961b4e1ebb9ac80b123951ff8bd66g.jpg" alt="roughEndoplasmaticReticulum"></p>
+
+<p>Cells in both animals and plants, there is a system of highly developed membrane delimiting cavities of different shapes and sizes in continuity between them. The presence or absence of ribosomes of such cavities, allows to distinguish between the rough endoplasmic reticulum and smooth. The development greater than the other indicates the presence of synthetic activities for which the element is specialized. In particular, the greater development of the rough endoplasmic reticulum indicates an active synthesis of proteins intended to be secreted.</p>
+
+<p>The functions used to design this element are:</p>
+
+<ul>
+<li>NUBS</li>
+<li>BEZIER</li>
+<li>COONS_PATCH</li>
+</ul><p>VIEW CODE: <a href="https://github.com/noemibiancone/finalproject/blob/master/singleElements/RoughEndoplasmaticReticulum.js">Rough Endoplasmatic Reticulum</a></p>
+
+<h2>Cell Membrane and neuron</h2>
+
+<p><img src="http://www.mediafire.com/conv/d02c8e7a145cd1f6b4f68c2bda2663b5d48483f8f47126c859cda001ded8ddd06g.jpg" alt="cellMembraneNeuron"></p>
+
+<p>The outer cell membrane plays a delimiting and protective for the cell itself. The function of the plasma membrane is to divide the internal environment from the external one in order to constantly regulate the passage in and out of all the substances. The fundamental property of this membrane is the selective permeability, very complex phenomenon in which mechanisms are involved only in part known.</p>
+
+<p><img src="http://www.mediafire.com/conv/4321aca4e3fc6bce0a0bd82ae39f9fee059a3d621104caa0656a2009b043c6496g.jpg" alt="cellMembrane"></p>
+
+<p>The nervous system is composed of two major classes of cells: neurons and glia (or neuroglia), and the first represent only 10-20% of the total. Neurons are specialized for the excitation and conduction of nerve impulses; communicate with each other via synapses. Neurons are the functional units strutturtali and nervous system. In addition to receiving and sending pulses, have the function to produce hormonal substances. A neuron possesses a cell body (Often Called the soma), dendrites, and an axon. The dendrites are constituted by branches similar to those of a tree. The complexity affects the dendritic tree in the number of signals received by the neuron itself. The axon leads instead the signal in a centrifugal direction towards other cells. It has a uniform diameter and is an excellent conductor due to the layers of myelin.</p>
+
+<p><img src="http://www.mediafire.com/conv/8fcd0f4d55ca040ca7ecee8e6141f2e8ea5e86fa6935dc66b9996f2df1411cf96g.jpg" alt="neuron"></p>
+
+<p>The functions used to design these elements are:</p>
+
+<ul>
+<li>NUBS</li>
+<li>BEZIER</li>
+</ul><p>VIEW CODE: <a href="https://github.com/noemibiancone/finalproject/blob/master/singleElements/cellMembraneAxonAndDendrites.js">Cell Membrane and Neuron</a></p>
+
+<h1>Final Result</h1>
+
+<p>After each developed individual organelles, my colleague and I we went over the "puzzle" and after the necessary adjustments ("My God, how is it possible that the lysosome is inside the centriole??") This is the end result.</p>
+
+<p><img src="http://www.mediafire.com/conv/8a267b7f2ca27ef1fe5459efe64825936be49d5cad7fb719c6028209d159f07b6g.jpg" alt="total"></p>
+
+<p><img src="http://www.mediafire.com/conv/f53f9f27460a986e3cd9c0a1dc666905ba99e27074815ccc3c034056c51952346g.jpg" alt="totalCombined"></p>
+
+<p>VIEW CODE: <a href="https://github.com/noemibiancone/finalproject/blob/master/final-project-total-by-Bicchielli-Biancone.js">Bicchielli Biancone Project</a></p>
+
+<ul>
+<li><p>Some content on this site (including text and images) are taken from the web and belong to their respective owners.</p></li>
+<li><p>All information about Plasm.js can be found at <a href="https://github.com/cvdlab/plasm.js">Plasm</a></p></li>
+</ul>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/noemibiancone/finalproject/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/noemibiancone/finalproject/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/noemibiancone/finalproject"></a> is maintained by <a href="https://github.com/noemibiancone">noemibiancone</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
