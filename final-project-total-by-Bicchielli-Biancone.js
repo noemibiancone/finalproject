@@ -78,11 +78,11 @@ function createNubs (point) {
     return c1;
 }
 
-/* This function creates a 1 grade Bezier curve. The function takes as input an array of curves. It returns to the Bezier curve. 
+/* This function creates a Bezier curve. The function takes as input an array of curves. It returns to the Bezier curve. 
 
    INPUT - An array of curves
 
-   OUTPUT - A 1 grade Bezier curve
+   OUTPUT - A Bezier curve
 
 */
 
@@ -93,11 +93,11 @@ function createBezierS1(curves) {
   return b1;
 }
 
-/* This function creates a 2 grade Bezier curve. The function takes as input an array of curves and a color. It returns to the drawing of curves. 
+/* This function creates a Bezier curve. The function takes as input an array of curves and a color. It returns to the drawing of curves. 
 
    INPUT - An array of curves and a color
 
-   OUTPUT - A 2 grade Bezier curve
+   OUTPUT - A Bezier curve
 
 */
 
@@ -108,25 +108,6 @@ function createBezierS2 (curves, color) {
 }
 
 /* This function takes an array as input and reverses it. It returns the reversed array. */
-
-function reverseR(array) {
-  var arrayReturn = [];
-  var j = 0;
-  for(var i = array.length-1; i>=0; i--) {
-        
-        arrayReturn[j] = array[i];
-        j++;
-  }
-  return arrayReturn;
-}
-
-/* This function takes an array as input and reverses it. It returns the reversed array. 
-   
-   INPUT - An array 
-
-   OUTPUT - A reversed array 
-
-*/
 
 function reverseR(array) {
   var arrayReturn = [];
@@ -172,11 +153,11 @@ function createControls(controls, breadth) {
     return controlsRet; 
 }
 
-/* This function creates a 1 grade Bezier curve. It takes in input an initial point, a final point and an array of points. It returns the 1 grade Bezier curve. 
+/* This function creates a Bezier curve. It takes in input an initial point, a final point and an array of points. It returns the Bezier curve. 
  
    INPUT - An initial point, a final point and an array of points.
 
-   OUTPUT - A 1 grade Bezier curve. 
+   OUTPUT - A Bezier curve. 
 
 */
 
@@ -194,11 +175,11 @@ function createCurveSurface(pointStart, pointFinal, points) {
   return createBezierS1(nubs);
     }
 
-/* This function creates a 1 grade Bezier curve. It takes in input a final point and an array of points. It returns the 1 grade Bezier curve. 
+/* This function creates a Bezier curve. It takes in input a final point and an array of points. It returns the Bezier curve. 
  
    INPUT - A final point and an array of points.
 
-   OUTPUT - A 1 grade Bezier curve. 
+   OUTPUT - A Bezier curve. 
 
 */
 
@@ -295,7 +276,7 @@ function controlsPointTransformation(controls) {
  
    INPUT - Two arrays of control points.
 
-   OUTPUT - A 1 grade Bezier curve. 
+   OUTPUT - ABezier curve. 
 
 */
 function generateMicrotubule (pointSup,pointInf) {
@@ -2303,6 +2284,8 @@ var closure2 = createBezierS2([Sx8, point], mattDarkOrchid);
 
 
 //---------------------------------------------------------------------------MITOCHONDRION 1-------------------------------------------------------------------
+
+
 
 var controlsMitoBottom1 = [[278.3294677734375,92.87374877929688,0],[275.994384765625,95.2088394165039,0],[274.0653991699219,96.4271469116211,0],[271.7303161621094,97.44239807128906,0],[269.3952331542969,96.93477630615234,0],[268.07537841796875,95.91951751708984,0],[267.5677795410156,93.7874755859375,0],[268.3799743652344,91.452392578125,0],[267.8723449707031,90.4371337890625,0],[266.8570861816406,89.52339935302734,0],[265.232666015625,89.62493133544922,0],[264.11590576171875,91.85848999023438,0],[262.2884216308594,94.70121002197266,0],[261.37469482421875,96.32562255859375,0],[258.8365478515625,96.32562255859375,0],[255.58773803710938,95.61493682861328,0],[253.86180114746094,93.99053192138672,0],[253.25265502929688,92.0615463256836,0],[254.3694305419922,89.52339935302734,0],[256.1968994140625,87.59441375732422,0],[257.4151916503906,85.4623794555664,0],[257.6182556152344,83.22881317138672,0],[256.50146484375,82.21356201171875,0],[255.181640625,81.7059326171875,0],[253.3541717529297,82.51813507080078,0],[252.23739624023438,84.34559631347656,0],[251.12062072753906,85.36085510253906,0],[249.19163513183594,86.57916259765625,0],[246.6534881591797,87.39136505126953,0],[244.3184051513672,87.18831634521484,0],[242.2878875732422,85.97000885009766,0],[240.8665313720703,84.65017700195312,0],[240.56195068359375,82.21356201171875,0],[241.98330688476562,79.87847137451172,0],[244.52145385742188,77.74642944335938,0],[245.84127807617188,76.12202453613281,0],[246.34890747070312,73.88845825195312,0],[246.34890747070312,71.45184326171875,0],[244.6229705810547,70.43658447265625,0],[242.2878875732422,69.82743072509766,0],[239.34364318847656,71.24879455566406,0],[237.9222869873047,73.17778015136719,0],[235.99330139160156,74.80219268798828,0],[234.06431579589844,75.41134643554688,0],[230.71397399902344,75.10676574707031,0],[229.59718322753906,74.09150695800781,0],[227.56666564941406,71.75642395019531,0],[227.7697296142578,69.52285766601562,0],[228.988037109375,66.68013763427734,0],[230.5109100341797,64.75115203857422,0],[231.01853942871094,62.00996017456055,0],[229.59718322753906,59.57334518432617,0],[227.36361694335938,58.456565856933594,0],[224.52090454101562,57.44131088256836,0],[221.27207946777344,57.13673400878906,0],[219.546142578125,55.816898345947266,0],[218.226318359375,53.989437103271484,0],[217.2110595703125,51.34977340698242,0],[216.90647888183594,47.999427795410156,0],[217.2110595703125,44.852134704589844,0],[219.4446258544922,42.618568420410156,0],[221.88124084472656,41.19721221923828,0],[224.927001953125,41.60331344604492,0],[227.7697296142578,43.02467346191406,0],[230.1048126220703,43.02467346191406,0]];
 var nubscontrolsMitoBottom1 = createNubs(controlsMitoBottom1);
