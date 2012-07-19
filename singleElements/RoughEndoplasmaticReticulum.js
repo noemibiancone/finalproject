@@ -80,7 +80,6 @@ function createBezierS1(curves) {
 
    INPUT - An array of curves and a color
 
-   OUTPUT - A Bezier curve
 
 */
 
